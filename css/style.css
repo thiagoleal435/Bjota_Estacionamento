@@ -1,0 +1,147 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-login>h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.right-login {
+    background-color: var(--roxo);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: var(--cor-fundo);
+    border-radius: 20px;
+}
+
+.card-login>h1 {
+    color: var(--cor-hover);
+    font-weight: 800;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--cor-primaria);
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px var(--cor-fundo);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.textfield>input::placeholder {
+    color: var(--cor-fundo);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--roxo);
+    background: var(--cor-hover);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--roxo);
+}
+
+.btn-login:hover {
+    background-color: var(--cor-hover-button);
+}
+
+.img {
+    border-radius: 5%;
+    width: 60%;
+    height: 60%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+.text-rodape {
+    font-size: 1.5rem;
+    padding-top: 2%;
+    text-align: center;
+    color: var(--cor-hover);
+}
+
+.icones-rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    padding: 1% 0;
+}
+
+.icones-rodape a {
+    text-decoration: none;
+}
+
+.icones-rodape a svg {
+    margin: 5% 0;
+    width: 50px;
+    height: 50px;
+}
+
+.icones-rodape a svg:hover,
+.icones-rodape a svg:focus {
+    color: var(--cor-hover);
+    transition: 0.5s;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--cor-hover)
+}

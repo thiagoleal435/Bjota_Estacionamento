@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root {
+    --roxo: rgb(55, 4, 75);
+    --cor-fundo: rgb(105, 98, 98);
+    --cor-hover: rgb(5, 240, 36);
+    --cor-hover-button: rgb(243, 45, 39);
+    --cor-primaria: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Play', sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.container-interno {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+.botoes-container form {
+    margin: auto;
+    width: 80%;
+}
+
+.botoes-container input {
+    margin: auto;
+}
+
+.table-select {
+    width: 90%;
+    height: auto;
+}
+
+.table-cadastros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: .5%;
+    margin-top: 2%;
+    text-align: center;
+
+    border: 2px solid var(--cor-hover);
+    background: rgb(55, 4, 75);
+    border-radius: 10px 10px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-hover);
+}
+
+.table-cadastros-head,
+.table-cadastros-body {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+}

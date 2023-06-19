@@ -1,0 +1,156 @@
+.dp-menu ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+    align-items: center;
+
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/**/
+
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+
+.titulo-cadastro {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 2% 2%;
+    margin: 2% 0;
+    background: var(--roxo);
+    border-radius: 20px;
+}
+
+.tr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1% 3%;
+    margin-bottom: 3%;
+    width: 70%;
+    background: rgb(90, 74, 95);
+    border-radius: 20px;
+}
+
+.tr-veiculo {
+    padding: 1% 0;
+}
+
+.tr label {
+    margin-bottom: 1%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tr input {
+    margin-bottom: 2.5%;
+    font-size: 1rem;
+}
+
+.tipo-veiculo {
+    font-weight: 600;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    padding: 2%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--roxo);
+    background: var(--cor-hover);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--roxo);
+}
+
+.btn:hover {
+    background-color: var(--cor-hover-button);
+}
+
+.dp-menu-sair {
+    background-color: var(--roxo);
+    float: right;
+    margin: 0 auto;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.btn-sair {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--roxo);
+    background-color: var(--cor-hover);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--roxo);
+}
+
+.btn-sair:hover {
+    background-color: var(--cor-hover-button);
+}
+
+.card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 80px;
+    padding: 1% 0%;
+    border-radius: 50px;
+}
+
+.vagas-disponiveis {
+    font-weight: 600;
+}

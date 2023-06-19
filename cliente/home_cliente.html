@@ -1,0 +1,86 @@
+<?php
+
+session_start();
+
+// TESTES PARA VALIDAR LOGIN DE CLIENTE OU ENCERRAR A SESSÃO //
+
+if ((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true)) {
+    unset($_SESSION['usuario']);
+    unset($_SESSION['senha']);
+    header('Location: ../index.php');
+}
+if (isset($_POST['encerrar'])) {
+    unset($_SESSION['usuario']);
+    unset($_SESSION['senha']);
+    header('Location: ../index.php');
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cliente | Bjota Estacionamento</title>
+    <link rel="icon" href="../img/cats.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+
+<body>
+    <nav class="dp-menu">
+        <ul>
+            <li><a href="#"><img src="../img/icone_menu.png" alt="menu" title="menu" width="25px" height="25px"></a>
+                <ul>
+                    <li><a href="documentos/BjotEstacionamentoManual.pdf" download="">Manual</a></li>
+                    <li><a href="../menu_paginas/sobre.html">Sobre</a></li>
+                    <li><a href="#p1">Contatos</a></li>
+                </ul>
+            <li><a href="#"><img src="../img/icone_menu_2.png" alt="icon logo" title="icon logo" width="25px"
+                        height="25px"></a>
+                <ul>
+                    <li>
+
+                        <a href=<?php echo "atualiza_cadastro.php?Cliente=$_SESSION[usuario]" ?>>Atualizar Cadastro</a>
+
+                    </li>
+                    <li><a href="deleta_cliente.php">Excluir Cadastro</a></li>
+                </ul>
+            </li>
+            <div class="dp-menu-sair">
+                <form method="POST" action="home_cliente.php"><input class="btn-sair" type="submit" name="encerrar"
+                        value="Sair"></form>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="container-interno">
+            <div class="card1">
+                <img src="../img/bemvindo.gif" alt="estacionamento">
+
+                <?php
+                print_r($_SESSION['usuario']);
+                ?>
+
+            </div>
+
+            <div class="botoes-container">
+                <form class="card" method="POST" action="agendar.php">
+                    <input class="btn" type="submit" value="Agendar">
+                </form>
+                <form class="card" method="POST" action="historico_cliente.php">
+                    <input class="btn" type="submit" value="Histórico">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
